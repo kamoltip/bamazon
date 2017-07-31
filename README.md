@@ -8,18 +8,19 @@ The Bamazon Customer Portal is an Amazon-like storefront using MySQL & Node.JS a
 
 ## USAGE
 ***
-*### Firstly, run this command `<node bamazonCustomer.js>`
+
+### Firstly, run this command `<node bamazonCustomer.js>`
 
 
 ![Run Node Command](/images/nodeCommand.png)
 
-*### It will show all the exist product in the system then prompt the users to choose the product in their interest.
+### It will show all the exist product in the system then prompt the users to choose the product in their interest.
 
 ![Preview Products](/images/previewProducts.png)
 
 ![Preview Products](/images/prompt.png)
 
-*### After purchasing, the system will evaluate the total price and also show the current inventory after purchase.
+### After purchasing, the system will evaluate the total price and also show the current inventory after purchase.
 
 ![Purchase](/images/purchase.png)
 ***
