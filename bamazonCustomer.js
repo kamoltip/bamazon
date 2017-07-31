@@ -1,5 +1,6 @@
 var inquirer = require('inquirer');
 var mysql = require('mysql');
+var Table = require('cli-table');
 var connection = mysql.createConnection({
 	port:3306,
 	host:'localhost',
@@ -43,14 +44,24 @@ var showProduct = function(){
 		if(err) throw err;
 
 		collection = res;
-		res.map(function(el){
-			console.log('\nItem ID: '+ el.item_id + ' || ProductName: ' + el.product_name + ' || Price: ' + '$' + el.price) + '\n';
-		});
 
-		// for (var i = 0 ; i < res.length ; i++) {
-				
-		// console.log('\nID ' + res[i].item_id + '\n' + 'Products\'name : ' + res[i].product_name + '\n' + 'Price : ' + '$'+res[i].price + '\n');
-		// }
+		var table = new Table({
+		head: ['Item Id#', 'Product Name', 'Price'],
+		style: {
+			head: ['green'],
+			compact: false,
+			colAligns: ['center'],
+		}
+	});
+
+	//loops through each item in the mysql database and pushes that information into a new row in the table
+	for(var i = 0; i < res.length; i++){
+		table.push(
+			[res[i].item_id, res[i].product_name, '$'+res[i].price]
+		);
+	}
+	console.log(table.toString());
+
 	});
 };
 showProduct();
