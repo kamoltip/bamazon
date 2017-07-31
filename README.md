@@ -3,7 +3,7 @@
 # OVERVIEW
 ***
 
-The Bamazon Customer Portal is an Amazon-like storefront using MySQL & Node.JS allowing users to preview the exist products and will be prompted to purchase the available products.The app then will take in orders from customers and deplete stock from the store's inventory. The system  will then evaluate the total amount of their purchase and update the current product's quantity available in stock after purchasing in real time.
+The Bamazon Customer Portal is an Amazon-like storefront using MySQL & Node.JS allowing users to preview the exist products and will be prompted to purchase the available products. The app will take in orders from customers and deplete stock from the store's inventory. The system, will then evaluate the total amount of their purchase and update the current product's quantity in stock after purchasing in real time.
 
 
 ## USAGE
@@ -27,7 +27,7 @@ The Bamazon Customer Portal is an Amazon-like storefront using MySQL & Node.JS a
 
 
 
-### MYSQL inventory BRFORE purchase.
+### MYSQL inventory BEFORE purchase.
 ![sqlMark](/images/sqlMark.png)
 
 
